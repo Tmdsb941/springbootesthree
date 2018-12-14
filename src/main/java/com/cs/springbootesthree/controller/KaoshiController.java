@@ -36,7 +36,11 @@ public class KaoshiController {
 
     @RequestMapping("/Del")
     public  void TestDel(){
+
         int de=kaoshiService.del(19);
         System.out.println(de);
+
+            kaoshiService.del(19);
+
     }
 }
