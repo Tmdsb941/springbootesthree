@@ -7,10 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-<<<<<<< HEAD
-=======
-import javax.transaction.Transactional;
->>>>>>> Initial commit
 import java.util.List;
 
 @Service
@@ -26,14 +22,8 @@ public class KaoshiServiceImpl implements KaoshiService {
     }
 
     @Override
-<<<<<<< HEAD
     public int del(int ksid) {
         return kaoshiDao.deleteByKsid(ksid);
-=======
-    @Transactional
-    public int del(int id) {
-        return kaoshiDao.deleteByKsid(id);
->>>>>>> Initial commit
     }
 
 

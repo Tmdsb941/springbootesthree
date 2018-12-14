@@ -7,11 +7,7 @@ import java.util.List;
 
 public interface KaoshiDao extends JpaRepository<Kaoshi, Integer> {
     Kaoshi findAllByKspwdAndKsname(String ksname,String kspwd);
-<<<<<<< HEAD
     int deleteByKsid(int ksid);
-=======
-    int deleteByKsid(int id);
->>>>>>> Initial commit
 
 
 }
